@@ -16,8 +16,7 @@ pipeline {
             steps {
                 sh """
                 terraform init \
-                -backend-config="organization=learning_skg" \
-                -backend-config="workspace=ace-iac-day-zero"
+                -backend-config="organization=learning_skg" 
                 """
             }
         }
