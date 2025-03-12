@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         TF_API_TOKEN = credentials('tfcloud')  // Fetch Terraform Cloud API token from Jenkins
+        TF_TOKEN_app_terraform_io = credentials('tfcloud')
     }
 
     stages {
